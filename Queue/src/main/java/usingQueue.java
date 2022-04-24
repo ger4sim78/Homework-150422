@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 public class usingQueue {
     public static void main(String[] args) {
-        int num = 1;
         Queue<String> strings = new LinkedList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader("poem.txt"));
@@ -14,7 +13,7 @@ public class usingQueue {
             }
 
             for (String s : strings) {
-                System.out.println(s);
+                System.out.println(strings.peek());
                 TimeUnit.SECONDS.sleep((int) (Math.random() * 3) + 1);
             }
 
