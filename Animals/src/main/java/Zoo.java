@@ -54,7 +54,7 @@ public class Zoo {
 
 
     public static int getDistance () {
-        return (int) (Math.random() * 1000 + 1);
+        return (int) ((Math.random() * 1000) + 1);
     }
 
 
